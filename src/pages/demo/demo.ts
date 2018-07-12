@@ -51,4 +51,8 @@ export class DemoPage {
     this.navCtrl.pop();
   }
 
+  navigateToThirdPage(){
+    this.navCtrl.push('ThirdPage');
+  }
+
 }
