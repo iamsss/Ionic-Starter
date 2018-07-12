@@ -1,4 +1,4 @@
-import { DemoPage } from './../pages/demo/demo';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -14,8 +14,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     ItemDetailsPage,
-    ListPage,
-    DemoPage
+    ListPage
   ],
   imports: [
     BrowserModule,
@@ -25,8 +24,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     ItemDetailsPage,
-    ListPage,
-    DemoPage
+    ListPage
   ],
   providers: [
     StatusBar,

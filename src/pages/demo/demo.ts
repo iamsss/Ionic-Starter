@@ -15,11 +15,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DemoPage {
 
+  message = 'Default message';
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
+    this.message = this.navParams.get('message');
+    
+   
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad DemoPage');
+  ionViewDidLoad() { 
+    // This event fire only once on intial loaing 
+    alert('Ion ViewDidLoad');
+    console.log('ionViewDidLoad fire once when page load');
   }
 
 }
