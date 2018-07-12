@@ -1,3 +1,4 @@
+import { DemoPage } from './../demo/demo';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -22,6 +23,6 @@ export class HomePage {
     console.log('ionViewDidLoad HomePage');
   }
   goToDemoPage(){
-    this.navCtrl.push('DemoPage');
+    this.navCtrl.push(DemoPage);
   }
 }
