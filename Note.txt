@@ -1,0 +1,1 @@
+contrast is basicaally color of text in that div
