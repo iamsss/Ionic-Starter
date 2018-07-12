@@ -29,4 +29,27 @@ export class DemoPage {
     console.log('ionViewDidLoad fire once when page load');
   }
 
+  ionViewWillEnter() {
+    
+    console.log('ionViewWillEnter is fired just as the page is about to become active');
+    alert('Ion ViewWillEnter Fire');
+  }
+
+  ionViewDidEnter() {
+    console.log('ionViewDidEnter fire each time the page entered');
+    alert('IonViewDidEnter')
+  }
+
+  ionViewDidLeave() {
+    console.log('Fire when user leave the page');
+    alert('ionViewDidLeave');
+  }
+
+  ionViewWillUnload() {
+    console.log('this will run when page is about to destroy')
+    alert('ionViewWillUnload');
+    // Used to unsuscribe observable
+    // Prevent memory leak
+  }
+
 }
