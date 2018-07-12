@@ -1,7 +1,13 @@
+import { Test1Component } from './test1/test1';
 import { NgModule } from '@angular/core';
+import { Test2Component } from './test2/test2';
 @NgModule({
-	declarations: [],
+	declarations: [
+		Test1Component,
+		Test2Component],
 	imports: [],
-	exports: []
+	exports: [
+		Test1Component,
+		Test2Component]
 })
 export class ComponentsModule {}
