@@ -27,4 +27,7 @@ export class HomePage {
       message:'Hello From Home Page'
     });
   }
+  goToActionSheetPage(){
+    this.navCtrl.push('ActionsheetPage');
+  }
 }
