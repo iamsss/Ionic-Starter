@@ -39,7 +39,24 @@
   <button ion-button icon-only (click)="presentPopover($event)">
       <ion-icon name="more"></ion-icon>
     </button> 
+    <ion-list>
 
+        <ion-item>
+          <ion-label>Pepperoni</ion-label>
+          <ion-toggle [(ngModel)]="data1"></ion-toggle>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>Sausage</ion-label>
+          <ion-toggle [(ngModel)]="data2" disabled="true"></ion-toggle>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>Mushrooms</ion-label>
+          <ion-toggle [(ngModel)]="data3"></ion-toggle>
+        </ion-item>
+      
+      </ion-list>
 
   <test1></test1>
 </ion-content>

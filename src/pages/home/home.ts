@@ -16,6 +16,9 @@ import { IonicPage, NavController, NavParams ,ModalController, PopoverController
 })
 export class HomePage {
 
+  data1 = '';
+  data2 = '';
+  data3  
   constructor(
     public navCtrl: NavController,
      public navParams: NavParams,
