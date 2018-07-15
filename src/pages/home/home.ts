@@ -36,6 +36,9 @@ export class HomePage {
   goToButtonPage() {
     this.navCtrl.push('ButtonPage');
   }
+  goToLoadingPage() {
+    this.navCtrl.push('LoadingPage');
+  }
   public openModal(){
     var data = { message : 'hello world' };
     var modalPage = this.modalCtrl.create('ModalPage',data);
