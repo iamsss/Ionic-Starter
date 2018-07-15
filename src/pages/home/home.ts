@@ -95,5 +95,30 @@ export class HomePage {
     confirm.present();
   }
 
+  showRadio() {
+    let alert = this.alertCtrl.create();
+    alert.setTitle('Lightsaber color');
 
+    alert.addInput({
+      type: 'radio',
+      label: 'Blue',
+      value: 'blue',
+      checked: true
+    });
+    alert.addInput({
+      type: 'radio',
+      label: 'Black',
+      value: 'black',
+      checked: false
+    });
+
+    alert.addButton('Cancel');
+    alert.addButton({
+      text: 'OK',
+      handler: data => {
+        console.log('Your radio selected',data)
+      }
+    });
+    alert.present();
+  }
 }
