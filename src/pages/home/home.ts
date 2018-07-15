@@ -47,7 +47,13 @@ export class HomePage {
     this.navCtrl.push('RadioPage');
   }
   goToRangePage() {
-    this.navCtrl.push('RangePage');
+    this.navCtrl.push('SegmentPage');
+  }
+  goToSegmentPage() {
+    this.navCtrl.push('SlidePage');
+  }
+  goToSlidePage() {
+    this.navCtrl.push('SlidePage');
   }
    openModal(){
     var data = { message : 'hello world' };
