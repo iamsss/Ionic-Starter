@@ -58,6 +58,9 @@ export class HomePage {
   goToTabPage() {
     this.navCtrl.push('TabPage');
   }
+  goToToastPage() {
+    this.navCtrl.push('ToastPage');
+  }
    openModal(){
     var data = { message : 'hello world' };
     var modalPage = this.modalCtrl.create('ModalPage',data);
