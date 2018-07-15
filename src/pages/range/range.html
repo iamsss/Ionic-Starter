@@ -1,0 +1,53 @@
+<!--
+  Generated template for the RangePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Range</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+  <ion-item>
+    <ion-range [(ngModel)]="singleValue" color="danger" pin="true"></ion-range>
+  </ion-item>
+
+  <ion-item>
+    <ion-range min="-200" max="200" [(ngModel)]="saturation" color="secondary">
+      <ion-label range-left>-200</ion-label>
+      <ion-label range-right>200</ion-label>
+    </ion-range>
+  </ion-item>
+
+ <ion-item>
+   <ion-range min="20" max="80" step="2" [(ngModel)]="brightness">
+     <ion-icon small range-left name="sunny"></ion-icon>
+     <ion-icon range-right name="sunny"></ion-icon>
+   </ion-range>
+ </ion-item>
+
+  <ion-item>
+    <ion-label>step=100, snaps, </ion-label>
+    <ion-range min="1000" max="2000" step="100" snaps="true" color="secondary" [(ngModel)]="singleValue4"></ion-range>
+  </ion-item>
+
+ <ion-item>
+  <ion-range min="18" max="100" dualKnobs="true" pin="true" [(ngModel)]="setdage" color="danger">
+  <ion-label range-left>18</ion-label>
+  <ion-label range-right>100+</ion-label>
+  </ion-range>
+</ion-item>
+</ion-list>
+
+{{ singleValue }}
+{{ singleValue4 }}
+{{ brightness }}
+
+</ion-content>

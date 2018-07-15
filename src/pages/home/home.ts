@@ -46,6 +46,9 @@ export class HomePage {
   goToRadioPage() {
     this.navCtrl.push('RadioPage');
   }
+  goToRangePage() {
+    this.navCtrl.push('RangePage');
+  }
    openModal(){
     var data = { message : 'hello world' };
     var modalPage = this.modalCtrl.create('ModalPage',data);
