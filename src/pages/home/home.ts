@@ -41,4 +41,35 @@ export class HomePage {
     alert.present();
   }
 
+  showPrompt() {
+    const prompt = this.alertCtrl.create({
+      title: 'Login',
+      message: "Enter a your name ?",
+      inputs: [
+        {
+          name: 'name',
+          placeholder: 'Name'
+        },{
+          name: 'section',
+          placeholder: 'Section'
+        }
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Save',
+          handler: data => {
+            console.log('Your name is ', data.name);
+          }
+        }
+      ]
+    });
+    prompt.present();
+  }
+
 }
